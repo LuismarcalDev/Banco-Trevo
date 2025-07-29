@@ -1,0 +1,142 @@
+.headers{
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 30px;
+top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+z-index: 2000;
+}
+
+
+.deposito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.deposito-container{
+    margin-top: 70px;
+}
+.title-deposito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 16px;
+}
+.title-deposito h2{
+    font-family: "poppins";
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+    font-size: 30px;
+}
+.hrs-deposito{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 230px;
+}
+
+#hr-deposito{
+    border: 1.5px #069448 solid;
+    width: 50px;
+    position: relative;
+    top: -6px;
+}
+.adicionar-valor{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.valores-predefinidos-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    top: -25px;
+}
+.valores-predefinidos{
+    border: 2px rgb(73, 73, 73) solid;
+    padding: 5px;
+    border-radius: 12px;
+    font-family: "poppins";
+    font-size: 13px;
+    width:63px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+    
+}
+.adicionar-valor input{
+    text-align: center;
+    font-family: "poppins";
+    font-size: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+#valor-hr{
+    width: 90%;
+    position: relative;
+    top: -29px;
+     border: 1.5px #069448 solid;
+}
+#btn-deposito{
+    width: 90%;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #069448;
+    font-family: "poppins";
+    border-radius: 7px;
+}
+
+
+.confirmacao{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+     height: 250px;
+     box-shadow: 2px 5px 15px black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+
+}
+.confirmacao img{
+width: 64px;
+}
+.confirmacao p{
+    font-family: "poppins";
+    width: 70%;
+    text-align: center;
+    font-size: 13px;
+}
+.confirmacao button{
+    width: 75%;
+    padding: 12px;
+    border: none;
+    background-color: #069448;
+    border-radius: 7px;
+    color: white;
+}
+.confirmacao button:hover{
+    width: 75%;
+    padding: 12px;
+    border: none;
+    background-color: #96caae;
+    border-radius: 7px;
+    color: white;
+}
+

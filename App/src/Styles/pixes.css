@@ -1,0 +1,79 @@
+.geralPix{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+
+}
+.pix-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.info-CPF{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.info-CPF label{
+    color:#069448 ;
+    font-family: "poppins";
+    font-size: 13px;
+}
+.info-CPF input{
+    border: 1px rgba(0, 0, 0, 0.795) solid;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+}
+.info-CPF p{
+    font-family: "poppins";
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.733);
+}
+.valorPix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15px;
+}
+.title-pix h2{
+font-family: "poppins";
+color: rgb(70, 70, 70);
+font-size: 22px;
+font-weight: 500;
+}
+.title-pix hr{
+  
+}
+.geralpaga-pix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.geralpaga-pix input{
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: "poppins";
+    font-size: 35px;
+}
+.geralpaga-pix hr{
+   border: 1px #069448 solid;
+     width: 50%;
+     position: relative;
+     top: -18px;
+}
+
+.pix-container button{
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #069448;
+    border-radius: 5px;
+
+}
