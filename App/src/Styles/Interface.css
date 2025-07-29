@@ -1,0 +1,171 @@
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 75px;
+    height: 64px;
+}
+.title-header{
+    font-family: "poppins";
+}
+.title-header h2{
+    font-size: 22px;
+    color: #069448;
+    font-weight: 500;
+
+}
+.title-header h3{
+font-weight: 400;
+position: relative;
+top: -7px;
+}
+
+.valor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.valor h3{
+    font-family: "poppins";
+    font-weight: 500;
+
+}
+.valor h2{
+    font-family: "poppins";
+    color: rgb(37, 37, 37);
+    font-weight: 500;
+}
+.container-valor{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color:#D9D9D9;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+#extrato{
+    color: #070707;
+    font-family: "poppins";
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+}
+.funcoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+.container-funcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 100px;
+    height: 90px;
+    padding-top: 20px;
+    border-radius: 7px;
+    gap: 3px;
+    
+
+}
+.container-funcao h4{
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 13px;
+}
+.cartao{
+    background: #17e879;
+background: linear-gradient(179deg, rgba(23, 232, 121, 1) 7%, rgba(16, 204, 104, 1) 75%, rgba(17, 143, 82, 1) 96%);
+width: 100%;
+padding: 10px;
+border-radius: 10px;
+color:#f5efef ;
+text-shadow: 2px 5px 15px rgba(0, 0, 0, 0.185);
+font-family: poppins;
+display: flex;
+justify-content: space-between;
+}
+.info-cartao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#trevocard{
+    font-weight: 600;
+}
+#nome{
+font-weight: 500;
+font-size: 13px;
+position: relative;
+top: -10px;
+}
+#numero-cartao{
+font-size: 14px;
+position: relative;
+top: -5px;
+}
+.subInfos{
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    width: 150px;
+    position: relative;
+    top: -4px;
+}
+#fatura{
+    font-weight: 450;
+    font-size: 20px;
+}
+.adc-cartao img{
+width: 38px;
+position: relative;
+left: 7px;
+
+}
+.adc-cartao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 10px;
+    align-items: center;
+}
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container-opcoes{
+    display: flex;
+    flex-direction: row;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "poppins";
+    font-size: 13px;
+}
+.aa{
+    width: 30px;
+}
+footer{
+    margin-top: 100px;
+}

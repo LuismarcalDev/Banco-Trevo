@@ -1,0 +1,110 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 70px;
+}
+.title-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-inicio h1{
+    font-family: "poppins";
+    color: #069448;
+    font-size: 37px;
+}
+.title-inicio p{
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 19px;
+}
+.inicio-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.login-informativo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px rgb(61, 61, 61) solid;
+    border-radius: 7px;
+    width: 350px;
+    gap: 5px;
+}
+.perfil-img{
+    background-color: silver;
+   height: 32px;
+    width: 32px;
+    border-radius: 100px;
+   text-align: center;
+    font-family: "poppins";
+    padding-top: 3px;
+    font-weight: 700;
+}
+.title-informativo p{
+font-family: "poppins";
+font-size: 11px;
+}
+#trocar{
+    font-family: "poppins";
+      color: #069448;
+      font-size: 13px;
+      position: relative;
+      top: -10px;
+      left: 80px;
+}
+#trocar:hover{
+    font-family: "poppins";
+      color: #057a3c;
+      font-size: 13px;
+      position: relative;
+      top: -10px;
+      left: 80px;
+      transition: 500ms;
+}
+input{
+    width: 100%;
+    padding: 16px;
+    border: 1px rgba(0, 0, 0, 0.753) solid;
+    border-radius: 7px;
+    outline: none;
+    
+}
+#entrar{
+    width: 100%;
+    border: 1px #069448 solid;
+    color: #069448;
+    padding: 15px;
+    border-radius: 7px;
+}
+#entrar:hover{
+    width: 100%;
+    border: 1px #069448 solid;
+    color: #069448;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgb(233, 233, 233);
+    transition: 600ms;
+}
+#cadastro{
+    width: 100%;
+    background-color: #069448;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+}
+#cadastro:hover{
+    width: 100%;
+    background-color: #068140;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    transition: 600ms;
+}
