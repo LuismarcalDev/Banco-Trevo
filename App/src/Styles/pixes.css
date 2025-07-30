@@ -25,6 +25,7 @@
     width: 100%;
     height: 40px;
     border-radius: 2px;
+    background-color: transparent;
 }
 .info-CPF p{
     font-family: "poppins";
@@ -60,6 +61,7 @@ font-weight: 500;
     outline: none;
     font-family: "poppins";
     font-size: 35px;
+    background-color: transparent;
 }
 .geralpaga-pix hr{
    border: 1px #069448 solid;

@@ -4,9 +4,12 @@ import "../Styles/style.css"
 import iconSecurity from "../imgs/deposito/iconSecurity.png"
 import { useGlobal } from '../Context/GlobalContext';
 import { useState } from "react";
+import seta from "../imgs/seta.png"
+import { useNavigate } from "react-router-dom";
 function Deposito(){
+      const navigate = useNavigate();
        const { valorConta,setValorConta } = useGlobal();
-       const [deposito, setDeposito]= useState(0)
+       const [deposito, setDeposito]= useState(null)
       
         function depositoMandar(){
             setValorConta(Number(deposito)+Number(valorConta))
@@ -38,6 +41,7 @@ setAparecerSeguranca("flex")
         <div className="headers" style={{backgroundColor:corHeaders}}>
             
             <Header/>
+         <img src={seta} alt="" id="seta"  onClick={()=>{ navigate('/central');}}/>
             <article className="deposito">
             <div className="deposito-container">
                 

@@ -39,6 +39,10 @@ navigate('/deposito');
  function pix0(){
         navigate('/pix');
        }
+       function extratoEnvi(){
+        navigate('/extrato');
+       }
+
 
   return (
     <div>
@@ -52,18 +56,18 @@ navigate('/deposito');
             <h2>R$ {valorNaoVisivel}</h2>
             <img onClick={VerValor} src={olho} alt="" id="olhinho" />
           </div>
-          <p id="extrato"> Ver Extrato</p>
+          <p id="extrato" onClick={extratoEnvi}> Ver Extrato</p>
         </div>
 
         <div className="funcoes">
-          <div className="container-funcao">
-            <img src={pix} alt="" onClick={pix0} />
+          <div className="container-funcao" onClick={pix0}>
+            <img src={pix} alt=""  />
             <h4>Fazer Pix</h4>
           </div>
 
-          <div className="container-funcao">
+          <div className="container-funcao" onClick={depositoEnviar}>
             <img src={emprestimo} alt="" />
-            <h4>Emprestimos</h4>
+            <h4>Depositos</h4>
           </div>
 
           <div className="container-funcao">
@@ -92,7 +96,7 @@ navigate('/deposito');
         </div>
 
         <div className="opcoes">
-          <div className="container-opcoes" onClick={depositoEnviar}>
+          <div className="container-opcoes" >
             <p>Fazer Deposito</p>
             <img src={emprestimo} alt="" />
           </div>
@@ -103,12 +107,12 @@ navigate('/deposito');
           </div>
 
           <div className="container-opcoes">
-            <p>Buscar Emprestimos</p>
+            <p>Seu Banco</p>
             <img className="aa" src={nagato} alt="" />
           </div>
 
           <div className="container-opcoes">
-            <p>Buscar Emprestimos</p>
+            <p>Renegociação</p>
             <img className="aa" src={rasengan} alt="" />
           </div>
         </div>

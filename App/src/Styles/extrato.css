@@ -1,0 +1,43 @@
+.Extrato{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 40px;
+}
+.container-extrato-geral{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title-extrato h2{
+font-family: "poppins";
+font-weight: 500;
+font-size: 16px;
+color:#069448 ;
+}
+.title-extrato hr{
+    position: relative;
+    top: 5px;
+}
+.extrato-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px rgba(0, 0, 0, 0.26) solid;
+    padding-bottom: 25px;
+}
+.temp{
+    font-family: poppins;
+}
+.temp h3{
+    font-size: 16px;
+    font-weight: 550;
+}
+.temp p{
+    font-size: 13px;
+}
+#grana{
+    font-family: "poppins";
+    font-weight: 500;
+
+}

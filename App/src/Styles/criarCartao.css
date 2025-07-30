@@ -1,0 +1,214 @@
+.crCartao{
+    margin-top: 40px;
+}
+.crCartao h2{
+    color: #069448;
+    font-family: "poppins";
+    font-weight: 600;
+        font-size: 28px;
+}
+.nomeCpf{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.unico-nomeCpf{
+display: flex;
+flex-direction: column;
+
+}
+.unico-nomeCpf input{
+border: 2px rgba(175, 230, 198, 0.603) solid;
+border-radius: 7px;
+box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.116);
+
+}
+.unico-nomeCpf label{
+    font-family: "poppins";
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+}
+.buttonids{
+    padding-left: 73%;
+}
+.buttonids button{
+    border: none;
+    background-color: #069448;
+    color: white;
+    font-family: "poppins";
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.buttonids button:hover{
+    border: none;
+    background-color: #0ba854;
+    color: white;
+    font-family: "poppins";
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.endereco{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}.junto-sono{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.junto-sono input{
+    height: 50px;
+    border: 2px rgba(175, 230, 198, 0.603) solid;
+border-radius: 7px;
+box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.041);
+}
+.junto-sono label{
+    font-family: "poppins";
+    font-size: 12px;
+}
+#rua{
+    width: 240px;
+
+}
+#num{
+    width: 60px;
+    text-align: center;
+
+}
+.input-lugar{
+    display: flex;
+    gap: 30px;
+}
+.input-cidade{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    font-family: "poppins";
+}
+.input-cidade label{
+    font-family: "poppins";
+    font-size: 12px;
+}
+.input-cidade input{
+ height: 50px;
+ border: 2px rgba(175, 230, 198, 0.603) solid;
+border-radius: 7px;
+box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.116);
+
+}
+.gerar{
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+    text-align: center;
+}
+.gerar h3{
+    font-family: "poppins";
+    color: #13502f;
+    font-weight: 600;
+    position: relative;
+    left: -95px;
+    top: 140px;
+    font-size: 21px;
+}
+.loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 6rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 130px;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: pulsOut 1.8s ease-in-out infinite;
+    filter: drop-shadow(0 0 1rem #0ba854);
+  }
+  .loader:before {
+    width: 100%;
+    padding-bottom: 100%;
+    box-shadow: inset 0 0 0 1rem #0ba854;
+    animation-name: pulsIn;
+  }
+  .loader:after {
+    width: calc(100% - 2rem);
+    padding-bottom: calc(100% - 2rem);
+    box-shadow: 0 0 0 0 #0ba854;
+  }
+
+  @keyframes pulsIn {
+    0% {
+      box-shadow: inset 0 0 0 1rem #0ba854;
+      opacity: 1;
+    }
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 #0ba854;
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulsOut {
+    0%, 50% {
+      box-shadow: 0 0 0 0 #0ba854c0;
+      opacity: 0;
+    }
+    100% {
+      box-shadow: 0 0 0 1rem #0ba854;
+      opacity: 1;
+    }
+  }
+  #slaa{
+     box-shadow: 5px 3px 15px #069448;
+  }
+  .cartao-gerado{
+    margin-top: 50px;
+  }
+  .cartao-gerado .info-cartao #nome{
+font-size: 16px;
+  }
+.cartao-gerado #numero-cartao{
+    font-size: 15px;
+}.cartao-gerado .subInfos{
+    font-size: 13px;
+}
+      .cartao-gerado .cartao{
+        height: 170px;
+      }
+      .cartao-gerado h2{
+        color: white;
+        position: relative;
+        top: -5px;
+      }
+
+#socorro{
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+    background-color: #0cbe5f;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.185);
+}
+#socorro:hover{
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+    background-color: #1ac96b;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.185);
+}
