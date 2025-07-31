@@ -8,8 +8,9 @@ import seta from "../imgs/seta.png"
 import { useNavigate } from "react-router-dom";
 function Deposito(){
       const navigate = useNavigate();
-       const { valorConta,setValorConta } = useGlobal();
-       const [deposito, setDeposito]= useState(null)
+       const { valorConta,setValorConta,  deposito,
+      setDeposito } = useGlobal();
+       
       
         function depositoMandar(){
             setValorConta(Number(deposito)+Number(valorConta))

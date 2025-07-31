@@ -3,8 +3,16 @@ import "../Styles/style.css"
 import Header from "./Header"
 import seta from "../imgs/seta.png"
 import { useNavigate } from "react-router-dom";
+import { useGlobal } from '../Context/GlobalContext';
+import { useState } from "react";
 function Extrato(){
      const navigate = useNavigate();
+     const { valorConta,setValorConta,  deposito,
+      setDeposito } = useGlobal();
+const [divs,setDivs]= useState([])
+function adicionarDiv(){
+    setDivs([...divs, {}])
+}
     return(
         <div className="headers">
             <Header/>
@@ -15,22 +23,16 @@ function Extrato(){
                 <hr />
          </div>
                 <div className="container-extrato-geral">
-
-                    <div className="extrato-container">
+{divs.map((_, index) => (
+                    <div className="extrato-container" key={index} >
                         <div className="temp">
                             <h3>Deposito em Conta</h3>
                         <p>Conta 602.908.980.86</p>
                         </div>
-                        <p id="grana">R$ 29.00</p>
+                        <p id="grana">R$ {deposito}</p>
                     </div>
-                    
-                    <div className="extrato-container">
-                        <div className="temp">
-                            <h3>Deposito em Conta</h3>
-                        <p>Conta 602.908.980.86</p>
-                        </div>
-                        <p id="grana">R$ 29.00</p>
-                    </div>
+                     ))}
+                    <button onClick={adicionarDiv}>wefwefw</button>
 
                     
 

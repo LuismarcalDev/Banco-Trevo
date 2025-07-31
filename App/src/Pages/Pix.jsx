@@ -6,7 +6,7 @@ import iconSecurity from "../imgs/deposito/iconSecurity.png"
 import seta from "../imgs/seta.png"
 import { useNavigate } from "react-router-dom";
 function Pix(){
-       const { valorConta,setValorConta } = useGlobal();
+       const { valorConta,setValorConta,eunao,setEunao } = useGlobal();
        const [sumirPix,setSumirPix] = useState("none")
        const [retirar,setRetirar]=useState(null)
        const [cpf,setCpf]= useState(null)
@@ -29,19 +29,57 @@ setAparecerSeguranca("flex")
         }
     }
      const [corHeaders,setCorHeaders] = useState("transparent")
-        const [aparecerSeguranca, setAparecerSeguranca] = useState("none")
+    const [aparecerSeguranca, setAparecerSeguranca] = useState("none")
 function confirmacao(){
 setCorHeaders("transparent")
 setAparecerSeguranca("none")
-if (valorConta>retirar){
+if (verdo == true){
+ter()
+}else if(verdo == false)
+tor()
+
+}
+function ter (){
+if (valorConta>retirar && verdo == true ){
 setValorConta(valorConta-retirar)
 setSemIdeia("none")
+
 }else if (retirar>valorConta){
 setSemIdeia("flex")
 }
+}
+function tor(){
+    if (eunao>retirar && verdo ==false){
+        setEunao(eunao-retirar)
+        setSemIdeia("none")
+    }else if(retirar>eunao){
+        setSemIdeia("flex")
+    }
+}
+
+
+const [verdo,setVerdo]= useState(null)
+ const [corCorrente, setCorCorrente]=useState("white")
+  const [corCartao, setCorCartao]=useState("white")
+  const [letraCorrente,setLetraCorrente]=useState("black")
+  const [letraCartao,setLetraCartao]=useState("black")
+function ContaCorrente(){
+   setCorCorrente("#069448")
+    setCorCartao("white")
+    setLetraCartao("black")
+    setLetraCorrente("white")
+    setVerdo(true)
 
 
 }
+function CartaoCredito(){
+   setCorCartao("#069448")
+    setCorCorrente("white")
+      setLetraCartao("white")
+    setLetraCorrente("black")
+    setVerdo(false)
+}
+
     return(
         <div className="geralPix" style={{backgroundColor:corHeaders}}>
             <Header/>
@@ -72,12 +110,18 @@ setSemIdeia("flex")
                     onChange={(e)=> setRetirar(e.target.value)}
                     />
                     <hr />
+                      <div className="bts-granaaa">
+                        <button onClick={ContaCorrente} style={{backgroundColor:corCorrente, color:letraCorrente}} >Conta Corrente</button>
+                        <button onClick={CartaoCredito} style={{backgroundColor:corCartao , color:letraCartao}}>Cartão de Credito</button>
+                    </div>
+                    
                     <p style={{display:semIdeia}}>Saldo Insuficiente</p>
+                  
                  </div>
                  
 
                     </div>
-                    <button onClick={sumira}>
+                    <button id="bk" onClick={sumira}>
                         Confirmar
                     </button>
 
@@ -86,7 +130,7 @@ setSemIdeia("flex")
               <div className="confirmacao" style={{display:aparecerSeguranca}}>
                                 <img src={iconSecurity} alt="" />
                                 <p>Por questoes de Confirmação voce Realiza fazer este Deposito em sua atual?</p>
-                                <button onClick={confirmacao}>Confirmar</button>
+                                <button  onClick={confirmacao}>Confirmar</button>
                              </div>
             </section>
         </div>

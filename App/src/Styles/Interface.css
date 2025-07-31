@@ -120,6 +120,24 @@ font-family: poppins;
 display: flex;
 justify-content: space-between;
 }
+.gerarCartaoNovo{
+  width: 100%;
+  height: 166px;
+  border: 2.5px #069448 solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gerarCartaoNovo img{
+    width: 42px;
+}
+.gerarCartaoNovo p{
+font-family: "poppins";
+font-size: 15px;
+font-weight: 500;
+}
 .info-cartao{
     display: flex;
     flex-direction: column;

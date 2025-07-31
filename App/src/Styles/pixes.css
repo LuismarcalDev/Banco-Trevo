@@ -65,17 +65,33 @@ font-weight: 500;
 }
 .geralpaga-pix hr{
    border: 1px #069448 solid;
-     width: 50%;
+     width: 90%;
      position: relative;
      top: -18px;
 }
 
-.pix-container button{
+#bk{
     margin-top: 50px;
     padding: 10px;
     border: none;
     color: white;
     background-color: #069448;
     border-radius: 5px;
+
+}
+.bts-granaaa button{
+padding: 5px;
+border: 1px #069448 solid;
+background-color: white;
+font-family: "poppins";
+font-weight: 500;
+font-size: 12px;
+border-radius: 7px;
+}
+.bts-granaaa{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top:-10px
 
 }

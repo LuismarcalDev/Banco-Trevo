@@ -9,13 +9,24 @@ import visa from "../imgs/Interface/funcoes/visa.png";
 import nagato from "../imgs/Interface/funcoes/nagato.png";
 import rasengan from "../imgs/Interface/funcoes/rasengan.png";
 import eyesBlock from "../imgs/Interface/eyesBlock.png";
+import adc from "../imgs/adc.png"
 import { useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
 import { useGlobal } from '../Context/GlobalContext';
 
 function InterfacePrincipal() {
      const navigate = useNavigate()
-   const { valorConta } = useGlobal();
+  const {  valorConta,
+      setValorConta,
+      nomeCartao,
+      setNomeCartao,
+      numeroAleatorio11,
+      eunao,
+      cvc,
+      fecharCartao,
+      setFecharCartao,
+      abrircartao,
+      setAbrircartao } = useGlobal();
    const [valorNaoVisivel,setvalorNaoVisivel] = useState()
   useEffect(()=>{
        setvalorNaoVisivel(valorConta)
@@ -43,7 +54,21 @@ navigate('/deposito');
         navigate('/extrato');
        }
 
-
+  function sono2(){
+   /*   valorConta,
+      setValorConta,
+      nomeCartao,
+      setNomeCartao,
+      numeroAleatorio11,
+      eunao,
+      cvc,
+      fecharCartao,
+      setFecharCartao,
+      abrircartao,
+      setAbrircartao*/
+      
+navigate('/Criarcartao');
+  }
   return (
     <div>
        
@@ -70,29 +95,33 @@ navigate('/deposito');
             <h4>Depositos</h4>
           </div>
 
-          <div className="container-funcao">
+          <div className="container-funcao" onClick={sono2}>
             <img src={cartao} alt="" />
             <h4>Cartões</h4>
           </div>
         </div>
 
-        <div className="cartao">
+        <div className="cartao" style={{display:fecharCartao}}>
           <div className="info-cartao">
             <h3 id="trevocard">TREVOCARD</h3>
-            <h3 id="nome">LUIS FELIPPE MARCAL</h3>
+            <h3 id="nome">{nomeCartao}</h3>
             <div className="infos-numero">
-              <p id="numero-cartao">4242 4242 4242 4242 </p>
+              <p id="numero-cartao"> </p>
               <div className="subInfos">
-                <p>CVC 098</p>
+                <p>CVC {cvc}</p>
                 <p>VAL 12/08</p>
               </div>
             </div>
-            <h2 id="fatura">R$ 1200.00</h2>
+            <h2 id="fatura">R$ {eunao}</h2>
           </div>
           <div className="adc-cartao">
             <img src={visa} alt="" />
             <p>VENCI 08/09</p>
           </div>
+        </div>
+        <div className="gerarCartaoNovo" onClick={sono2} style={{display:abrircartao}}>
+          <img src={adc} alt="" />
+          <p>Criar Cartão</p>
         </div>
 
         <div className="opcoes">
