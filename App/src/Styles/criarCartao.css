@@ -83,7 +83,7 @@ box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.041);
 }
 .input-lugar{
     display: flex;
-    gap: 30px;
+    gap: 70px;
 }
 .input-cidade{
     display: flex;

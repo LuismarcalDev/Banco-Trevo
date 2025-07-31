@@ -17,7 +17,8 @@ function CriarCartao(){
       fecharCartao,
       setFecharCartao,
       abrircartao,
-      setAbrircartao } = useGlobal();
+      setAbrircartao, cartao,
+      setCartao } = useGlobal();
    const [valorNaoVisivel,setvalorNaoVisivel] = useState()
   const navigate = useNavigate();
 
@@ -26,7 +27,7 @@ function CriarCartao(){
   const [loading, setLoading] = useState("none");
   const [final, setFinal] = useState("none");
   const [titulo, setTitulo] = useState("Vamos Fazer Seu Cartão De Credito");
-  const [cartao, setCartao] = useState(''); // <- AQUI
+  
 
   function endereco() {
     setComNome("none");

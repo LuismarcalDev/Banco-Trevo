@@ -6,7 +6,10 @@ import iconSecurity from "../imgs/deposito/iconSecurity.png"
 import seta from "../imgs/seta.png"
 import { useNavigate } from "react-router-dom";
 function Pix(){
-       const { valorConta,setValorConta,eunao,setEunao } = useGlobal();
+       const { valorConta,setValorConta,eunao,setEunao,divs,setDivs,nomeExtratoDepo,
+      setNomeExtratoDepo,
+      dadosExtrato,
+      setDadosExtrato, } = useGlobal();
        const [sumirPix,setSumirPix] = useState("none")
        const [retirar,setRetirar]=useState(null)
        const [cpf,setCpf]= useState(null)
@@ -41,8 +44,17 @@ tor()
 }
 function ter (){
 if (valorConta>retirar && verdo == true ){
-setValorConta(valorConta-retirar)
+    let finalCorrente = (valorConta-retirar)
+setValorConta(finalCorrente)
 setSemIdeia("none")
+  const novoNome = "Transferencia via Pix";
+  const novoDados = cpf;
+
+  setNomeExtratoDepo(novoNome);
+  setDadosExtrato(novoDados);
+
+  setDivs([...divs, { valor: retirar, nomeExtrato: novoNome, dadosExtrato1: novoDados }]);
+
 
 }else if (retirar>valorConta){
 setSemIdeia("flex")
@@ -52,6 +64,13 @@ function tor(){
     if (eunao>retirar && verdo ==false){
         setEunao(eunao-retirar)
         setSemIdeia("none")
+         const novoNome = "Transferencia via Cartão De Credito";
+  const novoDados = cpf;
+
+  setNomeExtratoDepo(novoNome);
+  setDadosExtrato(novoDados);
+
+  setDivs([...divs, { valor: retirar, nomeExtrato: novoNome, dadosExtrato1: novoDados }]);
     }else if(retirar>eunao){
         setSemIdeia("flex")
     }

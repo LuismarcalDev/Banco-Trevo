@@ -8,11 +8,12 @@ import { useState } from "react";
 function Extrato(){
      const navigate = useNavigate();
      const { valorConta,setValorConta,  deposito,
-      setDeposito } = useGlobal();
-const [divs,setDivs]= useState([])
-function adicionarDiv(){
-    setDivs([...divs, {}])
-}
+             setDeposito,divs,setDivs,  nomeExtratoDepo,
+      setNomeExtratoDepo,
+      dadosExtrato,
+      setDadosExtrato,} = useGlobal();
+
+
     return(
         <div className="headers">
             <Header/>
@@ -23,16 +24,16 @@ function adicionarDiv(){
                 <hr />
          </div>
                 <div className="container-extrato-geral">
-{divs.map((_, index) => (
+                {divs.map((item, index) => (
                     <div className="extrato-container" key={index} >
                         <div className="temp">
-                            <h3>Deposito em Conta</h3>
-                        <p>Conta 602.908.980.86</p>
+                            <h3>{item.nomeExtrato}</h3>
+                        <p>Conta {item.dadosExtrato1}</p>
                         </div>
-                        <p id="grana">R$ {deposito}</p>
+                        <p id="grana">R$ { item.valor}</p>
                     </div>
                      ))}
-                    <button onClick={adicionarDiv}>wefwefw</button>
+                
 
                     
 

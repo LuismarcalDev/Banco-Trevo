@@ -4,7 +4,7 @@ import Header from "./Header";
 import eyes from "../imgs/Interface/eyes.png";
 import pix from "../imgs/Interface/funcoes/pix.png";
 import emprestimo from "../imgs/Interface/funcoes/emprestimo.png";
-import cartao from "../imgs/Interface/funcoes/cartao.png";
+import cartao1 from "../imgs/Interface/funcoes/cartao.png";
 import visa from "../imgs/Interface/funcoes/visa.png";
 import nagato from "../imgs/Interface/funcoes/nagato.png";
 import rasengan from "../imgs/Interface/funcoes/rasengan.png";
@@ -26,7 +26,8 @@ function InterfacePrincipal() {
       fecharCartao,
       setFecharCartao,
       abrircartao,
-      setAbrircartao } = useGlobal();
+      setAbrircartao , cartao,
+      setCartao} = useGlobal();
    const [valorNaoVisivel,setvalorNaoVisivel] = useState()
   useEffect(()=>{
        setvalorNaoVisivel(valorConta)
@@ -96,7 +97,7 @@ navigate('/Criarcartao');
           </div>
 
           <div className="container-funcao" onClick={sono2}>
-            <img src={cartao} alt="" />
+            <img src={cartao1} alt="" />
             <h4>Cartões</h4>
           </div>
         </div>
@@ -106,7 +107,7 @@ navigate('/Criarcartao');
             <h3 id="trevocard">TREVOCARD</h3>
             <h3 id="nome">{nomeCartao}</h3>
             <div className="infos-numero">
-              <p id="numero-cartao"> </p>
+              <p id="numero-cartao">{cartao} </p>
               <div className="subInfos">
                 <p>CVC {cvc}</p>
                 <p>VAL 12/08</p>

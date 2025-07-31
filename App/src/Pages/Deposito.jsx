@@ -9,7 +9,10 @@ import { useNavigate } from "react-router-dom";
 function Deposito(){
       const navigate = useNavigate();
        const { valorConta,setValorConta,  deposito,
-      setDeposito } = useGlobal();
+      setDeposito,divs,setDivs,  nomeExtratoDepo,
+      setNomeExtratoDepo,
+      dadosExtrato,
+      setDadosExtrato, } = useGlobal();
        
       
         function depositoMandar(){
@@ -31,12 +34,19 @@ setAparecerSeguranca("none")
         }//#0000002d
         const [corHeaders,setCorHeaders] = useState("transparent")
         const [aparecerSeguranca, setAparecerSeguranca] = useState("none")
-function confirmacao(){
-setCorHeaders("#0000002d")
-setAparecerSeguranca("flex")
+function confirmacao() {
+  setCorHeaders("#0000002d");
+  setAparecerSeguranca("flex");
 
+  const novoNome = "Deposito em Conta";
+  const novoDados = "3456.345.332.34";
 
+  setNomeExtratoDepo(novoNome);
+  setDadosExtrato(novoDados);
+
+  setDivs([...divs, { valor: deposito, nomeExtrato: novoNome, dadosExtrato1: novoDados }]);
 }
+
 
     return(
         <div className="headers" style={{backgroundColor:corHeaders}}>
