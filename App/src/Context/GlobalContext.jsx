@@ -21,8 +21,15 @@ export function GlobalProvider({ children }) {
     return novo;
   });
 
-  const [fecharCartao, setFecharCartao] = useState("none");
-  const [abrircartao, setAbrircartao] = useState("abrir");
+  const [fecharCartao, setFecharCartao] = useState(() => {
+    const salvo = localStorage.getItem('fecharCartao');
+    return salvo !== null ? salvo : "none";
+  });
+
+  const [abrircartao, setAbrircartao] = useState(() => {
+    const salvo = localStorage.getItem('abrircartao');
+    return salvo !== null ? salvo : "abrir";
+  });
 
   const array = [118, 578, 689, 543, 567, 212, 987];
 
@@ -103,6 +110,14 @@ export function GlobalProvider({ children }) {
   useEffect(() => {
     localStorage.setItem('cartao', cartao);
   }, [cartao]);
+
+  useEffect(() => {
+    localStorage.setItem('fecharCartao', fecharCartao);
+  }, [fecharCartao]);
+
+  useEffect(() => {
+    localStorage.setItem('abrircartao', abrircartao);
+  }, [abrircartao]);
 
   return (
     <GlobalContext.Provider value={{

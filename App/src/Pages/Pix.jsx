@@ -84,7 +84,7 @@ const [verdo,setVerdo]= useState(null)
   const [letraCartao,setLetraCartao]=useState("black")
 function ContaCorrente(){
    setCorCorrente("#069448")
-    setCorCartao("white")
+    setCorCartao("transparent")
     setLetraCartao("black")
     setLetraCorrente("white")
     setVerdo(true)
@@ -93,7 +93,7 @@ function ContaCorrente(){
 }
 function CartaoCredito(){
    setCorCartao("#069448")
-    setCorCorrente("white")
+    setCorCorrente("transparent")
       setLetraCartao("white")
     setLetraCorrente("black")
     setVerdo(false)
