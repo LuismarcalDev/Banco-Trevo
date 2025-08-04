@@ -133,7 +133,7 @@ navigate('/Criarcartao');
 
           <div className="container-opcoes">
             <p>Buscar Emprestimos</p>
-            <img src={cartao} alt="" />
+            <img src={cartao1} alt="" />
           </div>
 
           <div className="container-opcoes">
